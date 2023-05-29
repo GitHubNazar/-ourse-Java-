@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Car Shop</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+      <th:block th:include="/_header"></th:block>
+   </head>
+   <body>
+      
+      <th:block th:include="/_menu"></th:block>
+       
+      <section id="spring1">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    
+
+     
+    <div class="carousel-item active">
+      <div class="carousel-caption d-none d-md-block">
+    <h1 style="font-size: 50px; font-weight: 900; margin-bottom: 140px; margin-right: 600px; color: #000;">TESLA S<br>
+<p style="font-size: 1rem; color: #000;">Don't Mess With Tesla<br> Hello, Tesla S.</p>
+ <a href=""  style="clear:both; background: #000; border: none; color: #fff; font-size: 1em; padding: 10px; cursor: pointer; font-size: 17px;" />SHOP NOW <span class="fa fa-arrow-right" style="margin-left: 9px;"></span></a>
+    </h1>
+    
+  </div>
+    </div>
+   
+  </div>
+  
+</div>
+</section>
+<br>
+
+
+
+<section id="about">
+  <div class="section-content">
+    <div class="container">
+
+      <div class="col-md-6">
+        <div class="about-text">
+          <h3>About me</h3>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+        <h5>Follow me</h5>
+        <a href="" class="btn btn-sm btn-outline-light">Facebook</a>
+        <a href="" class="btn btn-sm btn-outline-light">Twitter</a>
+        <a href="" class="btn btn-sm btn-outline-light">Github</a>
+
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------footer end---------------------------------- -->
+       
+      <th:block th:include="/_footer"></th:block>
+       
+   </body>
+</html>

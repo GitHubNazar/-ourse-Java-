@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+   <head>
+      <meta charset="UTF-8">
+      <title>Car Shop</title>
+      <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+      <th:block th:include="/_header"></th:block>
+   </head>
+   <body>
+      
+      <th:block th:include="/_menu"></th:block>
+       
+      <section id="spring1">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    
+
+     
+    <div class="carousel-item active">
+      <div class="carousel-caption d-none d-md-block">
+    <h1 style="font-size: 50px; font-weight: 900; margin-bottom: 140px; margin-right: 600px; color: #000;">TESLA S<br>
+<p style="font-size: 1rem; color: #000;">Don't Mess With Tesla<br> Hello, Tesla S.</p>
+ <a href=""  style="clear:both; background: #000; border: none; color: #fff; font-size: 1em; padding: 10px; cursor: pointer; font-size: 17px;" />SHOP NOW <span class="fa fa-arrow-right" style="margin-left: 9px;"></span></a>
+    </h1>
+    
+  </div>
+    </div>
+   
+  </div>
+  
+</div>
+</section>
+<br>
+
+
+
+<section id="about">
+  <div class="section-content">
+    <div class="container">
+
+      <div class="col-md-6">
+        <div class="about-text">
+          <h3 style="color: black">TESLA S</h3>
+          <p class="lead" style="color: #222222; ">П'ятидверний електричний ліфтбек виробництва американської компанії Tesla Inc.
+              У запланованій конфігурації із режимом «Plaid» авто матиме швидкість 322 км/год, <br> потужність 809 кВт (1100 к.с.) <br>
+              і проїжджатиме на одному<br> заряді 837 км. <br> <br> <span style="color: antiquewhite">Очікувана вартість — $140 тис</span>
+        </p>
+
+            <h5 style="color: black" >Follow me</h5>
+        <a style="color: black" href="https://github.com/GitHubNazar/Kursova-Car-Dealership" class="btn btn-sm btn-outline-light">Github</a>
+
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- ------------------------------footer end---------------------------------- -->
+       
+      <th:block th:include="/_footer"></th:block>
+       
+   </body>
+</html>
