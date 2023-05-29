@@ -4,7 +4,11 @@ DELETE FROM order_details;
 DELETE FROM orders;
 DELETE FROM vehicle;
 
-
+LOCK TABLES `accounts` WRITE;
+/*!40000 ALTER TABLE `accounts` DISABLE KEYS */;
+INSERT INTO `accounts` VALUES ('employee1',_binary '','$2a$10$PrI5Gk9L.tSZiW9FXhTS8O8Mz9E97k2FZbFvGFFaSsiTUIl.TCrFu','ROLE_EMPLOYEE'),('manager1',_binary '','$2a$10$PrI5Gk9L.tSZiW9FXhTS8O8Mz9E97k2FZbFvGFFaSsiTUIl.TCrFu','ROLE_MANAGER');
+/*!40000 ALTER TABLE `accounts` ENABLE KEYS */;
+UNLOCK TABLES;
 USE car_dealership;
 INSERT INTO accounts (user_name, ACTIVE, ENCRYTED_PASSWORD, USER_ROLE) VALUES
 ('admin', b'1', '123456', 'ADMIN'),
